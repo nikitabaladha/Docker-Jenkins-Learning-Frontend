@@ -10,8 +10,9 @@ RUN npm install
 
 # Copy the rest of the app and build it
 COPY . .
+
 # Optional: If you have an .env file for build
-# COPY .env .env
+COPY .env .env
 
 RUN npm run build
 

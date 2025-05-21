@@ -2,7 +2,8 @@
 
 import Axios from "axios";
 
-const baseURL = import.meta.env.REACT_APP_API_URL;
+const baseURL = import.meta.env.VITE_API_URL;
+console.log("Base URL is", baseURL);
 
 const axiosInstance = Axios.create({
   baseURL,

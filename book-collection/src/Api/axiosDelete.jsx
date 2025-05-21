@@ -1,15 +1,4 @@
-import Axios from "axios";
-
-// const baseURL = "http://localhost:3001/api";
-
 import axiosInstance from "./axiosConfig.jsx";
-
-// const axios = Axios.create({
-//   baseURL,
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-// });
 
 async function deleteAPI(url, headers = {}, isPrivate = true) {
   try {
