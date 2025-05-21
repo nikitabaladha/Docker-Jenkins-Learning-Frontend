@@ -1,0 +1,67 @@
+.Genre-container {
+  height: 350px;
+}
+
+#Genre .Genre-card {
+  width: 13rem;
+  margin: 10px;
+  border: none;
+  align-items: center;
+}
+
+#Genre .Genre-card-title {
+  color: #0d4278;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.Genre-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Genre-card-title {
+  text-align: center;
+}
+
+#Genre img {
+  padding: 0rem;
+}
+
+#Genre .wave-image {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+#Genre .wave-image:hover {
+  animation: wave 0.5s ease-in-out forwards;
+}
+
+#Genre-heading {
+  border-bottom: 2px solid #0d4278;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #0d4278;
+  font-family: "Playfair Display", serif;
+  margin: 30px;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25%,
+  75% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(-20deg);
+  }
+}

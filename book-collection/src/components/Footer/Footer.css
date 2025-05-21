@@ -1,0 +1,77 @@
+.footer {
+  background-color: #effafc;
+  padding: 20px 0;
+  color: #333;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer h5 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #0d4278;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #0d4278;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #0d4278;
+  text-decoration: underline;
+}
+
+.footer .form-group {
+  margin-bottom: 20px;
+}
+
+.footer .form-control {
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.footer .btn-primary {
+  background-color: #0d4278;
+  border-color: #0d4278;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.footer .btn-primary:hover {
+  background-color: #0d4278;
+  border-color: #0d4278;
+}
+
+.footer .fas {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #0d4278;
+}
+
+.footer .fas:hover {
+  color: #0d4278;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}

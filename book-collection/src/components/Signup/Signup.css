@@ -1,0 +1,26 @@
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input {
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+btn btn-primary {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.asking-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  text-transform: capitalize;
+}

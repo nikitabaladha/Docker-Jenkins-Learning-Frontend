@@ -1,0 +1,16 @@
+.notfound-container {
+  text-align: center;
+  margin-top: 20px;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 1.6em;
+  color: #0d4278;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  display: block;
+}

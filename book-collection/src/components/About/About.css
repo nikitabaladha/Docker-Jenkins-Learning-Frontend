@@ -1,0 +1,26 @@
+#aboutUs-title {
+  color: #235a9e;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #235a9e;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify;
+  margin-right: 50px;
+}
+
+.image-fluid {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-container-fluid {
+  margin-bottom: 20px;
+}
