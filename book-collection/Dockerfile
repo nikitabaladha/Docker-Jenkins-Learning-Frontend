@@ -17,10 +17,10 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Apache server to serve the static build
-FROM httpd:2.4
-RUN sed -i '/^#LoadModule rewrite_module/s/^#//' /usr/local/apache2/conf/httpd.conf
+# FROM httpd:2.4
+# RUN sed -i '/^#LoadModule rewrite_module/s/^#//' /usr/local/apache2/conf/httpd.conf
 
-RUN rm -rf /usr/local/apache2/htdocs/*
-COPY --from=builder /app/build/ /usr/local/apache2/htdocs/
-EXPOSE 80
-CMD ["httpd-foreground"]
+# RUN rm -rf /usr/local/apache2/htdocs/*
+# COPY --from=builder /app/build/ /usr/local/apache2/htdocs/
+# EXPOSE 80
+# CMD ["httpd-foreground"]
