@@ -19,7 +19,7 @@ RUN npm run build
 # Stage 2: Apache server to serve the static build
 FROM httpd:2.4
 RUN sed -i '/^#LoadModule rewrite_module/s/^#//' /usr/local/apache2/conf/httpd.conf
-COPY .htaccess /usr/local/apache2/htdocs/.htaccess
+
 RUN rm -rf /usr/local/apache2/htdocs/*
 COPY --from=builder /app/build/ /usr/local/apache2/htdocs/
 EXPOSE 80
