@@ -19,6 +19,12 @@ RUN npm run build
 # Stage 2: Apache server to serve the static build
 FROM httpd:2.4
 
+# Enable mod_rewrite for single-page app routing (important for React Router)
+RUN sed -i '/^#LoadModule rewrite_module/s/^#//' /usr/local/apache2/conf/httpd.conf
+
+# Copy custom .htaccess for React routing
+COPY .htaccess /usr/local/apache2/htdocs/.htaccess
+
 # Remove default HTML folder content
 RUN rm -rf /usr/local/apache2/htdocs/*
 
