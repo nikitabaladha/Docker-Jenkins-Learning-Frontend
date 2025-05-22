@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 
 # Optional: If you have an .env file for build
-COPY .env .env
+COPY book-collection/.env .env
 
 RUN npm run build
 

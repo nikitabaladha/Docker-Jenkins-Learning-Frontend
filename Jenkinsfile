@@ -12,7 +12,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo '🐳 Building Docker image for frontend...'
-                sh 'docker build -t book-collection-frontend .'
+                sh 'docker build -t book-collection-frontend ./book-collection'
             }
         }
 
