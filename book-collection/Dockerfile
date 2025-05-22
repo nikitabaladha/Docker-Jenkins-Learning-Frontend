@@ -8,11 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the app and build it
-COPY . .
+
 
 # Optional: If you have an .env file for build
-COPY book-collection/.env .env
+COPY .env .env
+
+# Copy the rest of the app and build it
+COPY . .
 
 RUN npm run build
 
