@@ -29,7 +29,7 @@ pipeline {
 
                 docker run -d \
                   --name book-collection-frontend-container \
-                  -p 80:3000 \
+                  -p 80:80\
                   book-collection-frontend
                 '''
             }
