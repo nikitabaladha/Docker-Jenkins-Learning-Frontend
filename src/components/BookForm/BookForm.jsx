@@ -56,7 +56,7 @@ const BookForm = ({ onSuccess }) => {
       formDataObj.append("yearPublished", formData.yearPublished);
       formDataObj.append("coverImage", formData.coverImage);
 
-      const response = await postAPI("/book ", formDataObj, {
+      const response = await postAPI("/book", formDataObj, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
